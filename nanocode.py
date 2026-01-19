@@ -6,6 +6,7 @@ import glob as globlib, json, os, re, subprocess, urllib.request
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY")
 API_URL = "https://openrouter.ai/api/v1/messages" if OPENROUTER_KEY else "https://api.anthropic.com/v1/messages"
 MODEL = os.environ.get("MODEL", "anthropic/claude-opus-4.5" if OPENROUTER_KEY else "claude-opus-4-5")
+MODEL = "xiaomi/mimo-v2-flash:free"
 
 # ANSI colors
 RESET, BOLD, DIM = "\033[0m", "\033[1m", "\033[2m"
